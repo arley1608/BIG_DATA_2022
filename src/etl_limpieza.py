@@ -5,3 +5,13 @@
 #   datos = corregir_fechas(datos, col = 'FECHA1') --> pd.dataframe
 #   datos = corregir_fechas(datos, col = 'FECHA2') --> pd.dataframe
 #   save_data()
+
+def main():
+    
+    filename = 'llamadas123_julio_2022.csv'
+    datos   = get_data(filename)
+    reporte = generate_report(datos)
+    save_data(reporte, filename)
+    
+if __name__ == '__main__':
+    main()
